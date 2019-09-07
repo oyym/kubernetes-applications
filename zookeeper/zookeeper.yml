@@ -66,8 +66,6 @@ spec:
                     values: 
                     - zookeeper
               topologyKey: "kubernetes.io/hostname"
-      imagePullSecrets:
-      - name: eju-docker-hub
       containers:
       - name: fangzookeeper
         imagePullPolicy: Always
