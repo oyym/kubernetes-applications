@@ -14,7 +14,7 @@ spec:
   - port: 2888
     name: server
   - port: 3888
-    name: leader-election
+    name: election
   clusterIP: None
   selector:
     app: zookeeper
@@ -71,7 +71,7 @@ spec:
       containers:
       - name: fangzookeeper
         imagePullPolicy: Always
-        image: csrepo.ejuops.com/library/zookeeper:3.5.5
+        image: oyymmw/zookeeper:3.5.5
         resources:
           requests:
             memory: "2Gi"
