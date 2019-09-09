@@ -67,7 +67,7 @@ spec:
                     - zookeeper
               topologyKey: "kubernetes.io/hostname"
       containers:
-      - name: fangzookeeper
+      - name: zookeeper
         imagePullPolicy: Always
         image: oyymmw/zookeeper:3.5.5
         resources:
